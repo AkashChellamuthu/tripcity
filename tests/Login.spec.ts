@@ -8,7 +8,7 @@ test('Login', async ({ page }) => {
   try{
   const startTime = Date.now();
 
-  await page.goto('https://app.tripcity.com/', {
+  await page.goto('https://uat.tripcity.com/', {
     waitUntil: 'commit',
     timeout: 60000,
   });
