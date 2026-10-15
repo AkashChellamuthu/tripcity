@@ -15,8 +15,8 @@ test('Login', async ({ page }) => {
  
 
 test.setTimeout(60000);
-  await page.locator('(//input[@type="email"])[1]').fill('yutorimurakami1@gmail.com');
-  await page.locator('#signin_password').fill('kdt9gwk1gug_wcx2GEV');
+  await page.locator('(//input[@type="email"])[1]').fill('human@yopmail.com');
+  await page.locator('#signin_password').fill('Test@123');
    await page.getByRole('button', { name: 'Login' }).click();
 
   
