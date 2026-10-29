@@ -1,0 +1,6 @@
+[    1187ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://kit.fontawesome.com/f226c2239c.js:0
+[    1217ms] [WARNING] Google Maps JavaScript API has been loaded directly without loading=async. This can result in suboptimal performance. For best-practice loading patterns please see https://goo.gle/js-api-loading @ https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyBttiNjsNSpyZaQ-FCdq-3Y38HsAVy4IBI:2825
+[    1248ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://uat.tripcity.com/:0
+[    1248ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://uat.tripcity.com/:0
+[    1248ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://uat.tripcity.com/:0
+[    2141ms] [WARNING] SweetAlert2: "onBeforeOpen" is deprecated and will be removed in the next major release. Please use "willOpen" instead. @ https://cdn.jsdelivr.net/npm/sweetalert2@10.13.0/dist/sweetalert2.all.min.js:0

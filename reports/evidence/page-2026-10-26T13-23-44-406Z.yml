@@ -1,0 +1,63 @@
+- generic [ref=f7e4]:
+  - generic [ref=f7e6]:
+    - generic [ref=f7e7]:
+      - link [ref=f7e8] [cursor=pointer]:
+        - /url: http://tripcity.com/
+        - img "TripCity Logo" [ref=f7e9]
+      - generic [ref=f7e10]: Welcome
+      - generic [ref=f7e13]:
+        - generic [ref=f7e14]: Email Address
+        - textbox "Email Address" [active] [ref=f7e15]
+      - generic [ref=f7e18]:
+        - generic [ref=f7e19]: Password
+        - textbox "Password" [ref=f7e20]
+        - button [ref=f7e21] [cursor=pointer]
+      - generic [ref=f7e24]:
+        - checkbox "Remember Me " [ref=f7e25]
+        - generic [ref=f7e26] [cursor=pointer]: Remember Me 
+      - button "Login" [ref=f7e29] [cursor=pointer]
+      - link "Need help logging in?" [ref=f7e30] [cursor=pointer]:
+        - /url: https://uat.tripcity.com/forgot-password
+      - generic [ref=f7e31]:
+        - text: New user?
+        - link "Sign Up" [ref=f7e32] [cursor=pointer]:
+          - /url: javascript:void(0);
+        - text: for an account.
+    - text: 
+  - generic [ref=f7e33]:
+    - generic [ref=f7e35]:
+      - navigation [ref=f7e36]:
+        - link "Driver Guide" [ref=f7e37] [cursor=pointer]:
+          - /url: http://tripcity.com/driver-onboarding
+        - link "Owner Guide" [ref=f7e38] [cursor=pointer]:
+          - /url: http://tripcity.com/owner-onboarding
+        - link "Help Center" [ref=f7e39] [cursor=pointer]:
+          - /url: https://tripcity.com/help
+        - link "Login" [ref=f7e40] [cursor=pointer]:
+          - /url: https://uat.tripcity.com/login
+        - link "Sign Up" [ref=f7e41] [cursor=pointer]:
+          - /url: https://uat.tripcity.com/sign-up
+        - link "+1 213 292 5663" [ref=f7e42] [cursor=pointer]:
+          - /url: tel:+1 213 292 5663
+        - link "support@tripcity.com" [ref=f7e43] [cursor=pointer]:
+          - /url: mailto:support@tripcity.com
+      - generic [ref=f7e44]:
+        - generic [ref=f7e45]:
+          - paragraph [ref=f7e46]:
+            - strong [ref=f7e47]: "REPORT AN ACCIDENT:"
+            - link "+1 213 513 2953" [ref=f7e48] [cursor=pointer]:
+              - /url: tel:+1 213 513 2953
+            - text: ·
+            - link "claims@tripcity.com" [ref=f7e49] [cursor=pointer]:
+              - /url: mailto:claims@tripcity.com
+          - paragraph [ref=f7e50]: Copyright © 2026 TripCity. All Rights Reserved.
+        - generic:
+          - link "Facebook":
+            - /url: https://www.facebook.com/tripcityrental
+          - link "Twitter/X":
+            - /url: https://x.com/tripcityrentals
+          - link "Instagram":
+            - /url: https://www.instagram.com/tripcityrental/
+          - link "Reddit":
+            - /url: https://www.reddit.com/r/tripcityrental/
+    - generic [ref=f7e51]: ×

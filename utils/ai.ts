@@ -1,58 +1,7 @@
-// import OpenAI from "openai";
-// import dotenv from "dotenv";
-
-
-// dotenv.config();
-
-// console.log("ENV:", process.env.GEMINI_API_KEY);
-// dotenv.config();
-
-
-// console.log("Gemini key loaded:", !!process.env.GEMINI_API_KEY);
-
-// if (!process.env.GEMINI_API_KEY) {
-//   throw new Error("GEMINI_API_KEY is not set. Check your .env file.");
-// }
-
-// if (!process.env.GEMINI_API_KEY) {
-//   throw new Error("GEMINI_API_KEY is not set. Check your .env file.");
-// }
-
-// const client = new OpenAI({
-//   apiKey: process.env.GEMINI_API_KEY,
-//   baseURL: "https://generativelanguage.googleapis.com/v1beta/openai/",
-// });
-
-// export async function askAI(prompt: string): Promise<string> {
-//   const response = await client.chat.completions.create({
-//     model: "gemini-2.5-flash",
-//     messages: [
-//       {
-//         role: "user",
-//         content: prompt,
-//       },
-//     ],
-//   });
-
-//   return response.choices[0].message.content ?? "";
-// }
-
-// export async function askAIForJSON<T>(prompt: string): Promise<T> {
-//   const text = await askAI(
-//     `{prompt}\n\nRespond with valid JSON only. No markdown, no explanation.`
-//   );
-
-//   const cleaned = text.replace(/```json|```/g, "").trim();
-
-//   return JSON.parse(cleaned) as T;
-// }
-
 import OpenAI from "openai";
 import dotenv from "dotenv";
 
 dotenv.config();
-
-console.log("Gemini key loaded:", !!process.env.GEMINI_API_KEY);
 
 if (!process.env.GEMINI_API_KEY) {
   throw new Error("GEMINI_API_KEY is not set. Check your .env file.");
@@ -91,19 +40,69 @@ export async function askAI(prompt: string): Promise<string> {
     return content;
   } catch (error: unknown) {
     if (error instanceof Error) {
-      console.error('Gemini API error:', error.message);
+      console.error('Gemini API request failed.');
     }
 
     throw error;
   }
 }
 
+// export async function askAIForJSON<T>(prompt: string): Promise<T> {
+//   const text = await askAI(
+//     `${prompt}\n\nRespond with valid JSON only. No markdown, no explanation.`
+//   );
+
+//   const cleaned = text.replace(/```json|```/g, "").trim();
+
+//   return JSON.parse(cleaned) as T;
+// }
+
+
 export async function askAIForJSON<T>(prompt: string): Promise<T> {
   const text = await askAI(
-    `${prompt}\n\nRespond with valid JSON only. No markdown, no explanation.`
+    `${prompt}
+
+Return exactly one JSON object with this structure:
+{
+  "actions": [
+    { "action": "goto", "url": "https://your-test-url" },
+    { "action": "expectVisible", "selector": "body" }
+  ]
+}
+
+Use only actions supported by the supplied instructions.
+The final action must verify the expected result.
+Return JSON only, without markdown or explanation.`
   );
 
-  const cleaned = text.replace(/```json|```/g, "").trim();
+  const cleaned = text
+    .replace(/```(?:json)?/gi, "")
+    .trim();
 
-  return JSON.parse(cleaned) as T;
+  console.log("Gemini raw response:", cleaned);
+
+  let parsed: unknown;
+
+  try {
+    parsed = JSON.parse(cleaned);
+  } catch {
+    const start = cleaned.indexOf("{");
+    const end = cleaned.lastIndexOf("}");
+
+    if (start === -1 || end <= start) {
+      throw new Error(
+        `Gemini did not return a JSON object. Response: ${cleaned.slice(0, 500)}`
+      );
+    }
+
+    try {
+      parsed = JSON.parse(cleaned.slice(start, end + 1));
+    } catch {
+      throw new Error(
+        `Gemini returned invalid JSON. Response: ${cleaned.slice(0, 500)}`
+      );
+    }
+  }
+
+  return parsed as T;
 }

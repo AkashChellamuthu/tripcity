@@ -1,0 +1,329 @@
+- generic [ref=f15e2]:
+  - banner [ref=f15e3]:
+    - navigation [ref=f15e4]:
+      - generic [ref=f15e5]:
+        - generic [ref=f15e6]:
+          - button [ref=f15e7] [cursor=pointer]
+          - link [ref=f15e9] [cursor=pointer]:
+            - /url: https://uat.tripcity.com/dashboard
+            - img "TripCity" [ref=f15e11]
+        - dialog [active] [ref=f15e329]:
+          - generic [ref=f15e330]:
+            - heading [level=5] [ref=f15e331]:
+              - img "TripCity Logo" [ref=f15e332]
+            - button "Close" [ref=f15e333] [cursor=pointer]
+          - list [ref=f15e335]:
+            - listitem [ref=f15e336]:
+              - link "Dashboard" [ref=f15e337] [cursor=pointer]:
+                - /url: https://uat.tripcity.com/dashboard
+            - listitem [ref=f15e339]:
+              - link "Find A Car" [ref=f15e340] [cursor=pointer]:
+                - /url: https://uat.tripcity.com/find-a-car/
+            - listitem [ref=f15e342]:
+              - link "Rentals" [ref=f15e343] [cursor=pointer]:
+                - /url: https://uat.tripcity.com/account/my-rentals
+            - listitem [ref=f15e345]:
+              - link "My Profile" [ref=f15e346] [cursor=pointer]:
+                - /url: https://uat.tripcity.com/my-profile
+            - listitem [ref=f15e348]:
+              - link "Inbox" [ref=f15e349] [cursor=pointer]:
+                - /url: https://uat.tripcity.com/chat/messages
+        - list [ref=f15e13]:
+          - listitem [ref=f15e14]:
+            - link [ref=f15e16] [cursor=pointer]:
+              - /url: "#"
+              - paragraph [ref=f15e17]: (tripcity:14258) Human
+              - img "Profile Photo" [ref=f15e19]
+  - list [ref=f15e22]:
+    - listitem [ref=f15e23]:
+      - link "Dashboard" [ref=f15e24] [cursor=pointer]:
+        - /url: https://uat.tripcity.com/dashboard
+    - listitem [ref=f15e25]:
+      - link "Find A Car" [ref=f15e26] [cursor=pointer]:
+        - /url: https://uat.tripcity.com/find-a-car/
+    - listitem [ref=f15e27]:
+      - link "Rentals" [ref=f15e28] [cursor=pointer]:
+        - /url: https://uat.tripcity.com/account/my-rentals
+    - listitem [ref=f15e29]:
+      - link "My Profile" [ref=f15e30] [cursor=pointer]:
+        - /url: https://uat.tripcity.com/my-profile
+    - listitem [ref=f15e31]:
+      - link "Inbox" [ref=f15e32] [cursor=pointer]:
+        - /url: https://uat.tripcity.com/chat/messages
+  - generic [ref=f15e34]:
+    - generic [ref=f15e35]:
+      - generic [ref=f15e37]:
+        - generic [ref=f15e39]:
+          - heading "Find the Perfect Ride" [level=1] [ref=f15e40]
+          - paragraph [ref=f15e41]: Enter the location and the dates and times you'd like the rental to start and end
+          - generic [ref=f15e42]:
+            - generic [ref=f15e44]:
+              - generic [ref=f15e45]: City or Zip or Place
+              - textbox "City or Zip or Place" [ref=f15e46]
+              - button "×" [ref=f15e47] [cursor=pointer]
+            - generic [ref=f15e49]:
+              - generic [ref=f15e50]: Radius
+              - combobox "Radius" [ref=f15e51]:
+                - option "1 Mile"
+                - option "3 Miles"
+                - option "5 Miles"
+                - option "10 Miles" [selected]
+                - option "20 Miles"
+                - option "30 Miles"
+                - option "50 Miles"
+            - generic [ref=f15e53]:
+              - generic [ref=f15e54]: Usage
+              - combobox "Usage" [ref=f15e55]:
+                - option "Personal" [selected]
+                - option "Rideshare"
+            - generic [ref=f15e57]:
+              - generic [ref=f15e58]:
+                - generic [ref=f15e59]: Start Date
+                - textbox "Start Date" [ref=f15e60]: 10/26/2026
+              - generic [ref=f15e61]:
+                - generic [ref=f15e62]: Start Time
+                - combobox "Start Time" [ref=f15e63]:
+                  - option "12:00 am"
+                  - option "1:00 am"
+                  - option "2:00 am"
+                  - option "3:00 am"
+                  - option "4:00 am"
+                  - option "5:00 am"
+                  - option "6:00 am" [selected]
+                  - option "7:00 am"
+                  - option "8:00 am"
+                  - option "9:00 am"
+                  - option "10:00 am"
+                  - option "11:00 am"
+                  - option "12:00 pm"
+                  - option "1:00 pm"
+                  - option "2:00 pm"
+                  - option "3:00 pm"
+                  - option "4:00 pm"
+                  - option "5:00 pm"
+                  - option "6:00 pm"
+                  - option "7:00 pm"
+                  - option "8:00 pm"
+                  - option "9:00 pm"
+                  - option "10:00 pm"
+                  - option "11:00 pm"
+            - generic [ref=f15e65]:
+              - generic [ref=f15e66]:
+                - generic [ref=f15e67]: End Date
+                - textbox "End Date" [ref=f15e68]: 10/29/2026
+              - generic [ref=f15e69]:
+                - generic [ref=f15e70]: End Time
+                - combobox "End Time" [ref=f15e71]:
+                  - option "12:00 am"
+                  - option "1:00 am"
+                  - option "2:00 am"
+                  - option "3:00 am"
+                  - option "4:00 am"
+                  - option "5:00 am"
+                  - option "6:00 am" [selected]
+                  - option "7:00 am"
+                  - option "8:00 am"
+                  - option "9:00 am"
+                  - option "10:00 am"
+                  - option "11:00 am"
+                  - option "12:00 pm"
+                  - option "1:00 pm"
+                  - option "2:00 pm"
+                  - option "3:00 pm"
+                  - option "4:00 pm"
+                  - option "5:00 pm"
+                  - option "6:00 pm"
+                  - option "7:00 pm"
+                  - option "8:00 pm"
+                  - option "9:00 pm"
+                  - option "10:00 pm"
+                  - option "11:00 pm"
+            - button "Find a Car" [ref=f15e72] [cursor=pointer]
+        - generic [ref=f15e74]:
+          - heading "Recently Viewed Cars" [level=2] [ref=f15e76]
+          - generic [ref=f15e77]:
+            - generic [ref=f15e79]:
+              - link "Card image cap ★★★★★ ★★★★★ ★★★★★ 4.7 on 3 Reviews 2021 Hyundai Kona Personal $100/day Rideshare $100/day" [ref=f15e82] [cursor=pointer]:
+                - /url: https://uat.tripcity.com/car/2021-hyundai-kona-13371-22163
+                - generic [ref=f15e83]:
+                  - generic [ref=f15e84]:
+                    - img "Card image cap" [ref=f15e85]
+                    - generic [ref=f15e87]:
+                      - generic [ref=f15e88]: ★★★★★ ★★★★★ ★★★★★
+                      - generic [ref=f15e89]: 4.7 on 3 Reviews
+                  - generic [ref=f15e91]:
+                    - generic [ref=f15e92]: 2021 Hyundai Kona
+                    - generic [ref=f15e96]:
+                      - generic [ref=f15e97]: Personal $100/day
+                      - generic [ref=f15e98]: Rideshare $100/day
+              - link "Card image cap 2014 Cadillac SRX Personal $35/day" [ref=f15e101] [cursor=pointer]:
+                - /url: https://uat.tripcity.com/car/2014-cadillac-srx-13374-3943
+                - generic [ref=f15e102]:
+                  - img "Card image cap" [ref=f15e104]
+                  - generic [ref=f15e106]:
+                    - generic [ref=f15e107]: 2014 Cadillac SRX
+                    - generic [ref=f15e109]: Personal $35/day
+              - link "Card image cap 2004 Volkswagen Beetle Personal $50/day Rideshare $80/day" [ref=f15e115] [cursor=pointer]:
+                - /url: https://uat.tripcity.com/car/2004-volkswagen-beetle-13404-75722
+                - generic [ref=f15e116]:
+                  - img "Card image cap" [ref=f15e118]
+                  - generic [ref=f15e120]:
+                    - generic [ref=f15e121]: 2004 Volkswagen Beetle
+                    - generic [ref=f15e125]:
+                      - generic [ref=f15e126]: Personal $50/day
+                      - generic [ref=f15e127]: Rideshare $80/day
+              - link "Card image cap 2026 Toyota Corolla Personal $40/day Rideshare $50/day" [ref=f15e130] [cursor=pointer]:
+                - /url: https://uat.tripcity.com/car/2026-toyota-corolla-13415-23335
+                - generic [ref=f15e131]:
+                  - img "Card image cap" [ref=f15e133]
+                  - generic [ref=f15e135]:
+                    - generic [ref=f15e136]: 2026 Toyota Corolla
+                    - generic [ref=f15e140]:
+                      - generic [ref=f15e141]: Personal $40/day
+                      - generic [ref=f15e142]: Rideshare $50/day
+              - link "Card image cap 2020 Hyundai Elantra Personal $80/day" [ref=f15e145] [cursor=pointer]:
+                - /url: https://uat.tripcity.com/car/2020-hyundai-elantra-13458-23328
+                - generic [ref=f15e146]:
+                  - img "Card image cap" [ref=f15e148]
+                  - generic [ref=f15e150]:
+                    - generic [ref=f15e151]: 2020 Hyundai Elantra
+                    - generic [ref=f15e153]: Personal $80/day
+              - link "Card image cap 2020 Hyundai Elantra Personal $50/day Rideshare $75/day" [ref=f15e159] [cursor=pointer]:
+                - /url: https://uat.tripcity.com/car/2020-hyundai-elantra-13459-86580
+                - generic [ref=f15e160]:
+                  - img "Card image cap" [ref=f15e162]
+                  - generic [ref=f15e164]:
+                    - generic [ref=f15e165]: 2020 Hyundai Elantra
+                    - generic [ref=f15e169]:
+                      - generic [ref=f15e170]: Personal $50/day
+                      - generic [ref=f15e171]: Rideshare $75/day
+              - link "Card image cap 2022 Nissan Altima Personal $50/day Rideshare $55/day" [ref=f15e174] [cursor=pointer]:
+                - /url: https://uat.tripcity.com/car/2022-nissan-altima-13460-66150
+                - generic [ref=f15e175]:
+                  - img "Card image cap" [ref=f15e177]
+                  - generic [ref=f15e179]:
+                    - generic [ref=f15e180]: 2022 Nissan Altima
+                    - generic [ref=f15e184]:
+                      - generic [ref=f15e185]: Personal $50/day
+                      - generic [ref=f15e186]: Rideshare $55/day
+              - link "Card image cap 2022 Nissan Altima Personal $50/day" [ref=f15e189] [cursor=pointer]:
+                - /url: https://uat.tripcity.com/car/2022-nissan-altima-13461-15999
+                - generic [ref=f15e190]:
+                  - img "Card image cap" [ref=f15e192]
+                  - generic [ref=f15e194]:
+                    - generic [ref=f15e195]: 2022 Nissan Altima
+                    - generic [ref=f15e197]: Personal $50/day
+              - link "Card image cap ★★★★★ ★★★★★ ★★★★★ 4 on 3 Reviews 2019 Hyundai Elantra Personal $50/day" [ref=f15e203] [cursor=pointer]:
+                - /url: https://uat.tripcity.com/car/2019-hyundai-elantra-13462-25621
+                - generic [ref=f15e204]:
+                  - generic [ref=f15e205]:
+                    - img "Card image cap" [ref=f15e206]
+                    - generic [ref=f15e208]:
+                      - generic [ref=f15e209]: ★★★★★ ★★★★★ ★★★★★
+                      - generic [ref=f15e210]: 4 on 3 Reviews
+                  - generic [ref=f15e212]:
+                    - generic [ref=f15e213]: 2019 Hyundai Elantra
+                    - generic [ref=f15e215]: Personal $50/day
+              - link "Card image cap ★★★★★ ★★★★★ ★★★★★ 4 on 1 Review 2022 Nissan Altima Personal $30/day Rideshare $50/day" [ref=f15e221] [cursor=pointer]:
+                - /url: https://uat.tripcity.com/car/2022-nissan-altima-13463-61656
+                - generic [ref=f15e222]:
+                  - generic [ref=f15e223]:
+                    - img "Card image cap" [ref=f15e224]
+                    - generic [ref=f15e226]:
+                      - generic [ref=f15e227]: ★★★★★ ★★★★★ ★★★★★
+                      - generic [ref=f15e228]: 4 on 1 Review
+                  - generic [ref=f15e230]:
+                    - generic [ref=f15e231]: 2022 Nissan Altima
+                    - generic [ref=f15e235]:
+                      - generic [ref=f15e236]: Personal $30/day
+                      - generic [ref=f15e237]: Rideshare $50/day
+              - link "Card image cap ★★★★★ ★★★★★ ★★★★★ 5 on 2 Reviews 2019 Hyundai Ioniq Personal $26/day" [ref=f15e240] [cursor=pointer]:
+                - /url: https://uat.tripcity.com/car/2019-hyundai-ioniq-13464-43114
+                - generic [ref=f15e241]:
+                  - generic [ref=f15e242]:
+                    - img "Card image cap" [ref=f15e243]
+                    - generic [ref=f15e245]:
+                      - generic [ref=f15e246]: ★★★★★ ★★★★★ ★★★★★
+                      - generic [ref=f15e247]: 5 on 2 Reviews
+                  - generic [ref=f15e249]:
+                    - generic [ref=f15e250]: 2019 Hyundai Ioniq
+                    - generic [ref=f15e252]: Personal $26/day
+              - link "Card image cap ★★★★★ ★★★★★ ★★★★★ 4 on 1 Review 2022 Tesla Model 3 Personal $50/day" [ref=f15e258] [cursor=pointer]:
+                - /url: https://uat.tripcity.com/car/2022-tesla-model_3-13467-82599
+                - generic [ref=f15e259]:
+                  - generic [ref=f15e260]:
+                    - img "Card image cap" [ref=f15e261]
+                    - generic [ref=f15e263]:
+                      - generic [ref=f15e264]: ★★★★★ ★★★★★ ★★★★★
+                      - generic [ref=f15e265]: 4 on 1 Review
+                  - generic [ref=f15e267]:
+                    - generic [ref=f15e268]: 2022 Tesla Model 3
+                    - generic [ref=f15e270]: Personal $50/day
+            - generic [ref=f15e274]:
+              - generic [ref=f15e275] [cursor=pointer]: 
+              - generic [ref=f15e276] [cursor=pointer]: 
+      - generic [ref=f15e280]:
+        - link "images ★★★★★ ★★★★★ ★★★★★ 4.7 on 9 Reviews Human Squirt" [ref=f15e281] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - img "images" [ref=f15e282]
+          - generic [ref=f15e283]:
+            - generic [ref=f15e284]: ★★★★★ ★★★★★ ★★★★★
+            - generic [ref=f15e285]: 4.7 on 9 Reviews
+          - heading "Human Squirt" [level=5] [ref=f15e286]
+        - generic [ref=f15e290]:
+          - generic [ref=f15e291]:
+            - generic [ref=f15e292]: "Phone:"
+            - generic "Phone Number Verified" [ref=f15e293]: 970-710-1062
+          - generic [ref=f15e294]:
+            - generic [ref=f15e295]: "Email:"
+            - generic "Email Address Verified" [ref=f15e296]: human@yopmail.com
+          - generic [ref=f15e297]:
+            - generic [ref=f15e298]: "Address:"
+            - text: 1000 Steps Beach, Coast Highway, Laguna Beach, CA, USA 5t Laguna Beach, CA 92651
+          - generic [ref=f15e299]:
+            - generic [ref=f15e300]: "License Information:"
+            - text: California N1104828 Expires on 05/28/2031
+          - img "license" [ref=f15e302]
+        - paragraph [ref=f15e303]:
+          - button "Preferred renter progress" [ref=f15e304] [cursor=pointer]
+          - generic [ref=f15e305]: You have Preferred Renter status — nice work.
+          - link "Edit Profile" [ref=f15e306] [cursor=pointer]:
+            - /url: https://uat.tripcity.com/my-profile
+          - link "Change Password" [ref=f15e307] [cursor=pointer]:
+            - /url: https://uat.tripcity.com/change-password
+    - generic [ref=f15e309]:
+      - navigation [ref=f15e310]:
+        - link "Driver Guide" [ref=f15e311] [cursor=pointer]:
+          - /url: http://tripcity.com/driver-onboarding
+        - link "Owner Guide" [ref=f15e312] [cursor=pointer]:
+          - /url: http://tripcity.com/owner-onboarding
+        - link "Help Center" [ref=f15e313] [cursor=pointer]:
+          - /url: https://tripcity.com/help
+        - link "Login" [ref=f15e314] [cursor=pointer]:
+          - /url: https://uat.tripcity.com/login
+        - link "Sign Up" [ref=f15e315] [cursor=pointer]:
+          - /url: https://uat.tripcity.com/sign-up
+        - link "+1 213 292 5663" [ref=f15e316] [cursor=pointer]:
+          - /url: tel:+1 213 292 5663
+        - link "support@tripcity.com" [ref=f15e317] [cursor=pointer]:
+          - /url: mailto:support@tripcity.com
+      - generic [ref=f15e318]:
+        - generic [ref=f15e319]:
+          - paragraph [ref=f15e320]:
+            - strong [ref=f15e321]: "REPORT AN ACCIDENT:"
+            - link "+1 213 513 2953" [ref=f15e322] [cursor=pointer]:
+              - /url: tel:+1 213 513 2953
+            - text: ·
+            - link "claims@tripcity.com" [ref=f15e323] [cursor=pointer]:
+              - /url: mailto:claims@tripcity.com
+          - paragraph [ref=f15e324]: Copyright © 2026 TripCity. All Rights Reserved.
+        - generic:
+          - link "Facebook":
+            - /url: https://www.facebook.com/tripcityrental
+          - link "Twitter/X":
+            - /url: https://x.com/tripcityrentals
+          - link "Instagram":
+            - /url: https://www.instagram.com/tripcityrental/
+          - link "Reddit":
+            - /url: https://www.reddit.com/r/tripcityrental/
+    - generic [ref=f15e325]: ×
